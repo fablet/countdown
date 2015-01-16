@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="countdown.js"></script>
+    <title>Countdown</title>
+    <style>
+        input[type=number]{ width: 30px; }
+        li {
+            text-align: right;
+            display: block;
+            }
+        ul {
+            width: 150px;
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+
+    <ul>
+    <li>Hours <input id="hours" type="number" min="0" value="0"/></li>
+    <li>Minutes <input id="minutes" type="number" min="0" max="60" value="0"/></li>
+    <li>Seconds <input id="seconds" type="number" min="0" max="60" value="0"/></li>
+    </ul>
+    <input type="button" value="Start Timer" onclick="setTime()"/><input type="button" onclick="cancelAlert()" value="End Alert">
+<span id="countdown" class="timer"></span>
+    <div id="audio_file"></div>
+</body>
+</html>
